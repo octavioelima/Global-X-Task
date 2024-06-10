@@ -1,0 +1,22 @@
+name: 'global_x_task'
+version: '1.0.0'
+config-version: 2
+
+profile: 'global_x_task'
+
+# Define models
+models:
+  global_x_task:
+    +schema: globalx
+    etl_integrated_etf_data:
+      materialized: view
+    polygon:
+      materialized: table
+    fred_unemp:
+      materialized: table
+    extra_metrics:
+      materialized: view
+    group_by_date:
+      materialized: view
+    group_by_stock:
+      materialized: view

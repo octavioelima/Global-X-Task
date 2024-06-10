@@ -1,0 +1,33 @@
+version: 2
+
+sources:
+  - name: global_x_task
+    database: AwsDataCatalog
+    schema: default_globalx
+    tables:
+      - name: integrated_etf_data
+
+models:
+  - name: etl_integrated_etf_data
+    description: "Integrated ETF Data"
+    columns:
+      - name: column1
+        description: "Description of column1"
+      - name: column2
+        description: "Description of column2"
+
+  - name: polygon
+    description: "Polygon data"
+    columns:
+      - name: column1
+        description: "Description of column1"
+      - name: column2
+        description: "Description of column2"
+
+  - name: fred_unemp
+    description: "FRED Unemployment Data"
+    columns:
+      - name: column1
+        description: "Description of column1"
+      - name: column2
+        description: "Description of column2"
